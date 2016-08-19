@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AndroidDatabinding</string>
+    <string name="general_information">General Information</string>
+    <string name="savebtn">SAVE</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="age">Age</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="school_information">School Information</string>
+    <string name="college_name">College Name</string>
+    <string name="year_of_admission">Year Of Admission</string>
+    <string name="year_of_graduation">Year Of Graduation</string>
+    <string name="badt_guy">Badt Guy</string>
+    <string name="not_bad">Not Bad</string>
+    <string name="good">Good</string>
+    <string name="grade">Grade</string>
+    <string name="english">English</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="yoruba">Yoruba</string>
+    <string name="fluid_mechanics">Fluid</string>
+    <string name="sport">Sport</string>
+    <string name="mechanics">Mechanics</string>
+    <string name="hunting">HUNTING</string>
+    <string name="sky_diving">SKY DIVING</string>
+    <string name="swimming">SWIMMING</string>
+    <string name="baseball">BASEBALL</string>
+    <string name="hockey">HOCKEY</string>
+    <string name="football">FOOTBALL</string>
+    <string name="title">Title</string>
+    <string name="subject">Subject</string>
+    <string name="email">Email</string>
+</resources>

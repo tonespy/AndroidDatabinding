@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="java.util.List"/>
+        <import type="android.view.View" />
+        <variable
+            name="person"
+            type="co.tonespy.databinding.PersonObject"/>
+        <variable
+            name="hobby"
+            type="co.tonespy.databinding.Hobby"/>
+        <variable
+            name="location"
+            type="co.tonespy.databinding.Location"/>
+        <variable
+            name="college"
+            type="co.tonespy.databinding.College"/>
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        tools:context=".CreateActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:background="@color/transparent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/createToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/savebtn"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_gravity="right|end"
+                    android:background="@color/transparent"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include
+            android:id="@+id/contentLayout"
+            layout="@layout/content_layout"
+            bind:hobby="@{hobby}"
+            bind:person="@{person}"
+            bind:college="@{college}"
+            bind:location="@{location}"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>
